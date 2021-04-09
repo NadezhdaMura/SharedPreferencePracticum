@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/counter">
+
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="60sp"
+        android:textColor="#6E0707"
+        android:layout_marginTop="250dp"
+        android:layout_alignParentTop="true"/>
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Type something here"
+        android:textSize="25sp"
+        android:layout_marginTop="360dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/counterText"
+        android:textStyle="italic"/>
+    <Button
+        android:id="@+id/bt_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Save"
+        android:layout_below="@id/et_text"
+        android:textSize="20sp"
+        android:background="@color/red"/>
+
+
+    <!--    Сделать приложение,в котором будет как EditText, так и TextView
+      и Button (Save), после ввода текста в EditText и после нажатия на
+      Button, TextView меняет свой текст на введенный, также подключить базу
+       данных SharedPreferences.-->
+
+
+</RelativeLayout>
